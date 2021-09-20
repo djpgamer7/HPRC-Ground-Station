@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HPRC Ground Station</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./map.js"></script>
+    </head>
+
+    <body>
+
+        <script src="./systemTray.js"></script>
+
+        <h1 id="title">HPRC Ground Station</h1>
+
+        <div id="map"></div>
+        <div id="telemetry">
+            <p>Status: <span id="status">Disconnected</span></p>
+            <p id="port">Serial Port: None</p>
+            <p id="altitude">Altitude: N/A</p>
+            <p id="coords">GPS Coords: N/A</p>
+
+            <script src="telemetryControl.js"></script>
+        </div>
+
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuOzp6WcLABHExKo2Bm7ZmvuKNmjTNBJ8&callback=initMap&libraries=&v=weekly"
+            async
+        ></script>
+    </body>
+</html>
