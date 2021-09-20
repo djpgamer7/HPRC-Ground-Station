@@ -9,10 +9,8 @@
   "author": "Daniel Pearson",
   "license": "ISC",
   "dependencies": {
-    "electron": "^14.0.0",
+    "electron": "^14.0.1",
     "google-maps": "^4.3.3"
   },
-  "devDependencies": {
-    "plotly": "^1.0.6"
-  }
+  "devDependencies": {}
 }
