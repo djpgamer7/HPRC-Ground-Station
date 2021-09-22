@@ -21,7 +21,7 @@ function createWindow() {
 
     mainWindow.loadFile('main.html')
 
-    mainWindow.webContents.openDevTools();
+    //mainWindow.webContents.openDevTools();
 
     const menu = Menu.buildFromTemplate(menuTemplate);
     Menu.setApplicationMenu(menu);
@@ -58,15 +58,6 @@ const menuTemplate = [
                 }
             }
         ]
-        /*label: "Windows",
-        submenu: [
-            {
-                role: 'Rocket'
-            },
-            {
-                role: 'Payload'
-            }
-        ]*/
     }
 ];
 

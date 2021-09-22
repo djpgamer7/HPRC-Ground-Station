@@ -23,7 +23,7 @@ body {
 
 #telemetry{ 
     float:left;
-    padding-left: 5px;
+    padding-left: 10px;
     padding-top: -3px;
     margin: auto;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -34,7 +34,7 @@ body {
 #liveView {
     width: 300px;
     height: 600px;
-    margin-left: 50px;
+    margin-left: 16px;
     float: left;
     border-style: solid;
     border-color: white;

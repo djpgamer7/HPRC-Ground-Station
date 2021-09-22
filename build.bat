@@ -1,0 +1,1 @@
+electron-packager "C:\Users\Daniel Pearson\Desktop\Workspace\HPRC\HPRC-Ground-Station\build.bat" "Ground Station" --platform=win32 --arch=x64

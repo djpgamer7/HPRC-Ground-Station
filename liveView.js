@@ -7,8 +7,6 @@ const h = container.clientHeight;
 
 //document.appendChild(container);
 
-console.log(w + h);
-
 var scene = new Three.Scene();
 var camera = new Three.PerspectiveCamera(75, w / h, 0.1, 1000);
 
