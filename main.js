@@ -20,12 +20,13 @@ function createWindow() {
     });
 
     mainWindow.loadFile('main.html')
+    mainWindow.setFullScreen(true)
 
     //mainWindow.webContents.openDevTools();
 
     const menu = Menu.buildFromTemplate(menuTemplate);
     Menu.setApplicationMenu(menu);
-}
+};
 
 const menuTemplate = [
     {
@@ -55,6 +56,12 @@ const menuTemplate = [
                 label: 'Payload',
                 click() {
                     
+                }
+            },
+            {
+                label: 'Exit',
+                click() {
+                    mainWindow.close();
                 }
             }
         ]
