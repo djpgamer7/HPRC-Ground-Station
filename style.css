@@ -39,3 +39,11 @@ body {
     border-style: solid;
     border-color: white;
 }
+
+#graphs {
+    width: 400px;
+    height: 400px;
+    float:inline-start;
+    border-style: solid;
+    border-color: orange;
+}
