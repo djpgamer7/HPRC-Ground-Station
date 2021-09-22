@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "electron": "^14.0.1",
-    "google-maps": "^4.3.3"
+    "google-maps": "^4.3.3",
+    "three": "^0.132.2"
   },
   "devDependencies": {}
 }

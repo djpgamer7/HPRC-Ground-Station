@@ -14,19 +14,14 @@ function createWindow() {
         height: 600,
         icon: path.join(__dirname, "/resources/icon.png"),
         webPreferences: {
-            enableRemoteModule: true
+            nodeIntegration: true,
+            contextIsolation: false
         }
     });
 
-    mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, 'main.html'),
-        protocol: 'file',
-        slashes: true
-    }));
+    mainWindow.loadFile('main.html')
 
-    mainWindow.on('closed', () => {
-        mainWindow = null;
-    });
+    mainWindow.webContents.openDevTools();
 
     const menu = Menu.buildFromTemplate(menuTemplate);
     Menu.setApplicationMenu(menu);
@@ -35,7 +30,34 @@ function createWindow() {
 const menuTemplate = [
     {
         label: "Windows",
-        
+        submenu: [
+            {
+                label: 'Main',
+                click() {
+                    mainWindow.loadURL(url.format({
+                        pathname: path.join(__dirname, 'main.html'),
+                        protocol: 'file',
+                        slashes: true
+                    }));
+                }
+            },
+            {
+                label: 'Rocket',
+                click() {
+                    mainWindow.loadURL(url.format({
+                        pathname: path.join(__dirname, '/RocketView/RocketView.html'),
+                        protocol: 'file',
+                        slashes: true
+                    }));
+                }
+            },
+            {
+                label: 'Payload',
+                click() {
+                    
+                }
+            }
+        ]
         /*label: "Windows",
         submenu: [
             {
