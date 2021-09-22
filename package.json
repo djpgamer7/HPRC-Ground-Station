@@ -15,5 +15,7 @@
     "google-maps": "^4.3.3",
     "three": "^0.132.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "electron-packager": "^15.4.0"
+  }
 }
