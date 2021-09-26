@@ -59,6 +59,12 @@ const menuTemplate = [
                 }
             },
             {
+                label: 'Dev Tools',
+                click() {
+                    mainWindow.webContents.openDevTools();
+                }
+            },
+            {
                 label: 'Exit',
                 click() {
                     mainWindow.close();
